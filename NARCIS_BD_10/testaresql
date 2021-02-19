@@ -1,0 +1,13 @@
+--Testam:
+--regiunea
+insert into Clienti values(null,'Trump', 'Asia');
+--Email
+insert into Angajati values(null,'Test','Test','Test','Test','Test%gmail.com','0745673645',12342193267547);
+--Nr telefon
+insert into Angajati values(null,'Test','Test','Test','Test','Test@gmail.com','0345673645',12342193267547);
+--cnp
+insert into Angajati values(null,'Test','Test','Test','Test','Test@gmail.com','0745673645',712342193267547);
+--Stele
+insert into Specificatii values('Test',6,null,30870,
+    (SELECT id_joc from Jocuri WHERE (id_joc=1)),
+    (SELECT Angajati_id_angajat from Jocuri WHERE (Angajati_id_angajat=3)));  

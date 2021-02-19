@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AF43AF88-1A63-65CC-851F-33F5CC3E1C1A" name="Angajati">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:54:59 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id angajat" id="1EEAA57D-4747-DCCE-2D71-39174DA4650B">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:55:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usernme angajat" id="184DABA9-B019-D4BE-FDAE-63BFA80DAD55">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:55:25 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume angajat" id="800E7744-170C-2485-D575-4DEE9BE45E37">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:55:36 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>angajati_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_angajat, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume angajat" id="DD3FA9EA-006B-82AF-13E2-2C2E906A0493">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:55:48 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>angajati_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(prenume_angajat, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa angajat" id="8D8C4AD3-F0F0-17E3-B26A-3EC852671DA1">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:55:59 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email angajat" id="DE8EF8F3-CF1C-7D61-1F2A-6D71E44B1CD4">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:56:14 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>angajati_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email_angajat, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon angajat" id="82582CE2-EB04-364F-BD7B-E60EA6C51B51">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:56:32 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>angajati_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like ( telefon_angajat, &apos;07\d{8}&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cnp angajat" id="EE5668F8-90E4-609B-5958-6F9B28FAAB81">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:57:17 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>angajati_cnp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cnp_angajat)=14"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F482ECA0-3439-C07E-687B-E9729C417314" name="Angajati PK">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:55:24 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EEAA57D-4747-DCCE-2D71-39174DA4650B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DD1D2E64-6279-0EF8-5BDD-21391B0128A3" name="Angajati_usernme_angajat_UN">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 10:57:03 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="false"/>
+</engineerTo>
+<newElementsIDs>184DABA9-B019-D4BE-FDAE-63BFA80DAD55</newElementsIDs>
+<usedAttributes>
+<attributeRef>184DABA9-B019-D4BE-FDAE-63BFA80DAD55</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

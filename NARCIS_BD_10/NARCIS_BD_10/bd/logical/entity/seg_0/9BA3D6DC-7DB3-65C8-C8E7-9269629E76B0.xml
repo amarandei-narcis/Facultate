@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BA3D6DC-7DB3-65C8-C8E7-9269629E76B0" name="Jocuri">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:51:07 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id joc" id="D27682ED-5FF1-8390-0D84-4A83D39FB704">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:51:13 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="A5F85BFB-07E7-5B15-7009-FB724217099F">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:51:29 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="107E113E-465A-8C40-1F1A-98C78DA7C301">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:51:42 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data aparitiei" id="1F64A687-E8CE-F5DB-8FFF-29EAAE4399EE">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:52:06 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gen" id="4174D3E3-0B2E-7656-D642-112E60CAE3E7">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:52:20 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip joc" id="513B28F7-0EBF-DCD0-A28C-49F3CF3601E9">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:52:41 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>jocuri_tip_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="multiplayer" description=""/>
+<valueDef value="single player" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Angajati id angajat" id="785F6AFB-D8BD-8895-FD19-B34DBF5265C3">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 10:05:22 UTC</createdTime>
+<generatorID>57737136-81B1-5F8F-FE3C-E603260CBD2D</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<referedAttribute>1EEAA57D-4747-DCCE-2D71-39174DA4650B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F77BB88-72C5-481A-0FB1-547666C46C8D" name="Jocuri PK">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:51:27 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D27682ED-5FF1-8390-0D84-4A83D39FB704</attributeRef>
+<attributeRef>785F6AFB-D8BD-8895-FD19-B34DBF5265C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

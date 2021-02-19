@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4919CC0-3542-B2FE-2AE6-725D10E9A50C" name="Detalii clienti">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:57:55 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cnp" id="CE7F0C98-BC88-A184-9A07-94E84EA68BDD">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:58:12 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="DDC53471-F007-6F53-6229-D49CD9BB76A6">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:58:33 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>clienti_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="1DD3AC42-DAF9-50D7-5816-A47C685A7F3C">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:58:43 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>clienti_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(prenume, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="6731752E-FF91-5BAB-2F26-EE5449C4B71D">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:58:52 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<constraintName>clienti_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr telefon" id="0F7E8A6F-59E7-AA3C-AFBE-C624E0D94A1D">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:59:05 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="C45AB9CC-97A6-C723-F11E-AE4F90CCD770">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:59:30 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tara" id="15B05EE5-234E-7DE6-720C-763C58C4A93A">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:59:45 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr card" id="525F88C5-E2DA-8157-1FA2-CD14B24E07F2">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:59:56 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clienti id client" id="3EDB2CCD-D8A4-1CD5-35CF-5DED782F3B65">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 10:02:17 UTC</createdTime>
+<generatorID>96CF00CB-52BD-A962-84DB-BF3062CB8755</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<referedAttribute>FDEF85FD-A5DB-71E2-8EB9-C1EE691B69BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="191E9BED-6293-CA0E-2FDB-79AF16BE5E73" name="Detalii_clienti_PK">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 09:58:19 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE7F0C98-BC88-A184-9A07-94E84EA68BDD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

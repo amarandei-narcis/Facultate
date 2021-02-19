@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="214877CB-B1C2-BD0B-C822-8A282A56554E" name="Detalii_clienti">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>C4919CC0-3542-B2FE-2AE6-725D10E9A50C</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cnp" id="A9F1160A-49CE-F676-8BCD-E2CDEE5A8186">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>CE7F0C98-BC88-A184-9A07-94E84EA68BDD</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="71D14BD1-06AB-86F5-E79F-CA7C2C743EF8">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>DDC53471-F007-6F53-6229-D49CD9BB76A6</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>clienti_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="2590C94A-C266-6AE4-F161-C212B4A738D4">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1DD3AC42-DAF9-50D7-5816-A47C685A7F3C</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>clienti_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(prenume, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="5BB381D1-451B-5C93-5E61-DBCB1326E4DD">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>6731752E-FF91-5BAB-2F26-EE5449C4B71D</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>clienti_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefon" id="18ACE2AE-C1C6-4DD0-0732-6D4B4DC99378">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>0F7E8A6F-59E7-AA3C-AFBE-C624E0D94A1D</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="87BBE889-E3B6-F228-BCCF-289EB5C3B616">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>C45AB9CC-97A6-C723-F11E-AE4F90CCD770</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tara" id="4EC09150-5A6E-0D82-F5B7-EBFD5B5FD77B">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>15B05EE5-234E-7DE6-720C-763C58C4A93A</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_card" id="CA6CE827-C265-4791-9C30-9D08EC59F8DF">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>525F88C5-E2DA-8157-1FA2-CD14B24E07F2</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clienti_id_client" id="744DD79C-B285-D8F2-808E-AB45D2D72EC1">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>3EDB2CCD-D8A4-1CD5-35CF-5DED782F3B65</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="069B4FA5-3725-C6F8-949A-98EBD9AE6DC0" referredColumn="E68EFF8B-2F03-77BE-B400-94F168013FF0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A485ED2-ED41-CD04-39E2-80E78441DDC5" name="Detalii_clienti_PK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>191E9BED-6293-CA0E-2FDB-79AF16BE5E73</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9F1160A-49CE-F676-8BCD-E2CDEE5A8186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55514158-2EEB-96D8-AF17-6D99C75D6C50" name="Detalii_clienti__IDX">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>96CF00CB-52BD-A962-84DB-BF3062CB8755</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="744DD79C-B285-D8F2-808E-AB45D2D72EC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDCB383E-99A9-A60E-882C-9A04038C7111" name="Detalii_clienti_Clienti_FK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>96CF00CB-52BD-A962-84DB-BF3062CB8755</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="744DD79C-B285-D8F2-808E-AB45D2D72EC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

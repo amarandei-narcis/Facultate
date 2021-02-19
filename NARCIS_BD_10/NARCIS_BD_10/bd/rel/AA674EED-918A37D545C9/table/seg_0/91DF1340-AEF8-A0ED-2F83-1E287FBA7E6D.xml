@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91DF1340-AEF8-A0ED-2F83-1E287FBA7E6D" name="Jocuri">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>9BA3D6DC-7DB3-65C8-C8E7-9269629E76B0</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_joc" id="F3CB1722-A444-DFD7-8322-099A1D9BD51A">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>D27682ED-5FF1-8390-0D84-4A83D39FB704</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="148ED1FD-2657-4D92-D0A3-98AB5D72ACDC">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>A5F85BFB-07E7-5B15-7009-FB724217099F</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="3F7AE3BC-2FDC-D845-B963-2650AC69A450">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>107E113E-465A-8C40-1F1A-98C78DA7C301</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_aparitiei" id="14674584-E64D-93EC-0770-E4921B1DEDC8">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1F64A687-E8CE-F5DB-8FFF-29EAAE4399EE</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gen" id="5BFD08E4-E328-ADC4-AE5C-1E87753DE554">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>4174D3E3-0B2E-7656-D642-112E60CAE3E7</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_joc" id="41729A6A-0B18-9ECF-76C6-E58D7F1465A9">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>513B28F7-0EBF-DCD0-A28C-49F3CF3601E9</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>jocuri_tip_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="multiplayer" description=""/>
+<valueDef value="single player" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Angajati_id_angajat" id="A434AF19-FAEA-E5D3-0718-9DED03996823">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>785F6AFB-D8BD-8895-FD19-B34DBF5265C3</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98BE4E3A-79EA-CB60-9919-946E4109CFF0" referredColumn="07072BBB-E962-BD4C-D7A3-1BA1EA75B8C5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC55FC9B-BF72-5801-0C35-C762F1EF56E3" name="Jocuri_PK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>0F77BB88-72C5-481A-0FB1-547666C46C8D</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3CB1722-A444-DFD7-8322-099A1D9BD51A"/>
+<colUsage columnID="A434AF19-FAEA-E5D3-0718-9DED03996823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3CC1B29-46B1-B5F4-0B06-BB28571813DE" name="Jocuri_Angajati_FK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>57737136-81B1-5F8F-FE3C-E603260CBD2D</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A434AF19-FAEA-E5D3-0718-9DED03996823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Jocuri Angajati FK" directorySegmentName="seg_0" id="57737136-81B1-5F8F-FE3C-E603260CBD2D">
+<createdBy>georg</createdBy>
+<createdTime>2021-01-05 10:05:22 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<engineerTo>
+<item key="AA674EED-F3EE-849B-B84F-918A37D545C9" value="true"/>
+</engineerTo>
+<sourcePk>F482ECA0-3439-C07E-687B-E9729C417314</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>fac upload</nameOnSource>
+<nameOnTarget>sunt uploadate de </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AF43AF88-1A63-65CC-851F-33F5CC3E1C1A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9BA3D6DC-7DB3-65C8-C8E7-9269629E76B0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

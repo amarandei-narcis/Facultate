@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE972D0A-093B-E029-87B2-67EFC42D2EBC" name="Angajati">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>AF43AF88-1A63-65CC-851F-33F5CC3E1C1A</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_angajat" id="07072BBB-E962-BD4C-D7A3-1BA1EA75B8C5">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1EEAA57D-4747-DCCE-2D71-39174DA4650B</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usernme_angajat" id="8D268395-2CA0-CA3E-D6A1-B1FD15344C3E">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>184DABA9-B019-D4BE-FDAE-63BFA80DAD55</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_angajat" id="100312AF-96C0-9F9B-1BC9-F1B698E57209">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>800E7744-170C-2485-D575-4DEE9BE45E37</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>angajati_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_angajat, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume_angajat" id="B98BA90F-B1A1-112F-5347-D82D67802B85">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>DD3FA9EA-006B-82AF-13E2-2C2E906A0493</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>angajati_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(prenume_angajat, &apos;[A-Za-z]+&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa_angajat" id="80149AEF-07F3-C1D3-4DF2-CD5C3D0F2D1C">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>8D8C4AD3-F0F0-17E3-B26A-3EC852671DA1</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_angajat" id="2CE28F37-26FF-3392-09F8-8A2CD900E055">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>DE8EF8F3-CF1C-7D61-1F2A-6D71E44B1CD4</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>angajati_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email_angajat, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon_angajat" id="8B4858F6-448B-3ED3-741C-9E84CD2F541B">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>82582CE2-EB04-364F-BD7B-E60EA6C51B51</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>angajati_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like ( telefon_angajat, &apos;07\d{8}&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cnp_angajat" id="ED554710-EA15-CB09-7A8B-E1D79CCFA030">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>EE5668F8-90E4-609B-5958-6F9B28FAAB81</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>angajati_cnp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cnp_angajat)=14"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30E6D760-ED76-B18D-E55D-33F03A7D1237" name="Angajati_PK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>F482ECA0-3439-C07E-687B-E9729C417314</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07072BBB-E962-BD4C-D7A3-1BA1EA75B8C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="733B787C-ECD2-D7FA-96CC-08FCF1E06D40" name="Angajati_usernme_angajat_UN">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>DD1D2E64-6279-0EF8-5BDD-21391B0128A3</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D268395-2CA0-CA3E-D6A1-B1FD15344C3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

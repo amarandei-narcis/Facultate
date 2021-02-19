@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4BB6A72-8F5B-9D7D-22AF-19EEC220635E" name="Specificatii">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1695B101-65F6-8384-6B47-611986FB1457</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nume_joc" id="C2186854-BA5D-9A98-85E5-8D734228A688">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>E01BC86B-20C0-1E89-BF1C-CF226D2261B8</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stele" id="93C0268B-BB3A-9EB2-5875-EE5809BE605B">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>6354C4D5-7E90-DD05-DA2B-64F8BAFAB34C</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>specifictii_Stele_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="comentarii" id="ABDC2326-A3F8-EEBD-B5D8-AD252154F170">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1F803FD6-B6FB-828D-F0CE-254630995493</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1500</dataTypeSize>
+<ownDataTypeParameters>1500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_descarcari" id="BA82E774-DC6F-0EE0-B0C5-AA1C4847F941">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>13384AF5-804C-76A6-9870-C3D06FAF8E71</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jocuri_id_joc" id="BF5FD718-A233-8F55-3232-3F6B27468C12">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>32DB904C-A465-5D89-7E81-10D1F49E34C7</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A820EF3F-2511-573E-AF87-0DF5931B7EEA" referredColumn="F3CB1722-A444-DFD7-8322-099A1D9BD51A"/>
+</associations>
+</Column>
+<Column name="Jocuri_Angajati_id_angajat" id="1C8E99BA-4996-168C-F448-26E33FDAD7A0">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>481C1214-AEB0-A5BD-4135-DC6F02C7B112</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A820EF3F-2511-573E-AF87-0DF5931B7EEA" referredColumn="A434AF19-FAEA-E5D3-0718-9DED03996823"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63F9A1C0-C04C-5E33-825C-FC0333EACA2E" name="Specificatii_PK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>33CEE020-70C9-FE3F-B065-919B516A1441</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="F93BE101-7CB4-4A69-5981-7E57D77CC6CC" name="Specificatii__IDX">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-07 11:40:12 UTC</createdTime>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1E0C83E0-4F2E-1651-E6EF-59921FA28B9E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BF5FD718-A233-8F55-3232-3F6B27468C12"/>
+<colUsage columnID="1C8E99BA-4996-168C-F448-26E33FDAD7A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4591408A-52DB-5F66-4B90-2EF5F59884D6" name="Specificatii_Jocuri_FK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1E0C83E0-4F2E-1651-E6EF-59921FA28B9E</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF5FD718-A233-8F55-3232-3F6B27468C12"/>
+<colUsage columnID="1C8E99BA-4996-168C-F448-26E33FDAD7A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

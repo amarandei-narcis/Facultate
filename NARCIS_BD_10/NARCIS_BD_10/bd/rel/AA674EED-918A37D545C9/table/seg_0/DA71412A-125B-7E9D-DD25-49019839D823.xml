@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA71412A-125B-7E9D-DD25-49019839D823" name="Clienti">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>980F831A-1F5B-0509-D95D-1FCB6433BC89</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="E68EFF8B-2F03-77BE-B400-94F168013FF0">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>FDEF85FD-A5DB-71E2-8EB9-C1EE691B69BE</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="11E7DA1D-F3D8-9121-F161-3EB8EE827A3A">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>D0274B37-6921-04B8-C113-A826FDC7A2C4</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regiune" id="BFC82971-129A-3450-16ED-9C09AD534AF0">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>3C80D4A4-4F12-6703-5DF7-470BDAA576C3</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<constraintName>clienti_regiune_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="America de N" description=""/>
+<valueDef value="Europa de N și E" description=""/>
+<valueDef value="Europa de V" description=""/>
+<valueDef value="Korea" description=""/>
+<valueDef value="Rusia" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B3A1974-5084-FED9-4385-55939C1FFCE0" name="Clienti_PK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>18C45FA8-C22B-5F6C-455C-446496151F88</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E68EFF8B-2F03-77BE-B400-94F168013FF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AB7863F-C7DA-EC7B-3522-6A7EB9A0A408" name="Clienti_username_UN">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>91BA8EF9-101D-BDE2-1E7B-38DEFAB81913</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E7DA1D-F3D8-9121-F161-3EB8EE827A3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

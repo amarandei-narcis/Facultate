@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A820EF3F-2511-573E-AF87-0DF5931B7EEA" containerWithKeyObject="F4BB6A72-8F5B-9D7D-22AF-19EEC220635E" localFKIndex="4591408A-52DB-5F66-4B90-2EF5F59884D6" name="Specificatii_Jocuri_FK">
+<createdBy>narci</createdBy>
+<createdTime>2021-01-05 19:26:56 UTC</createdTime>
+<generatorID>1E0C83E0-4F2E-1651-E6EF-59921FA28B9E</generatorID>
+<ownerDesignName>bd</ownerDesignName>
+<referredTableLongName>Jocuri</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>91DF1340-AEF8-A0ED-2F83-1E287FBA7E6D</referredTableID>
+<keyObject>CC55FC9B-BF72-5801-0C35-C762F1EF56E3</keyObject>
+<referredKeyID>CC55FC9B-BF72-5801-0C35-C762F1EF56E3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_joc,Angajati_id_angajat</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
